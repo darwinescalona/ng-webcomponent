@@ -3,7 +3,7 @@ import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'ng-chile-dog-of-the-day',
+  selector: 'ng-chile-dog',
   template: `
     <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
     <div class="component_container">
@@ -26,7 +26,7 @@ import { HttpClient } from '@angular/common/http';
       height: auto;
     }
   `],
-  encapsulation: ViewEncapsulation.Native
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class DogOfTheDayComponent implements OnInit {
 
