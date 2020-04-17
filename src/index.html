@@ -10,8 +10,37 @@
 </head>
 
 <body>
-    <ng-chile-dog></ng-chile-dog>
+    <ng-chile-dotd message="El perro del día"></ng-chile-dotd>
+    <br>
+    <hr>
+    <br>
+    <button id="refresh">Refrescar Imagen</button>
+    <br>
+    <br>
+    <input type="text" name="mensaje" id="mensaje">
+    <button id="setMensaje">Enviar Mensaje</button>
 
 </body>
+<script>
+    const customElement = document.querySelector('ng-chile-dotd');
+    customElement.addEventListener('imagenEvent', (event) => {
+        console.log('imagenEvent', event);
+    });
+
+
+
+    const btnRefresh = document.getElementById('refresh');
+    btnRefresh.addEventListener('click', (event) => {
+        console.log('btnRefresh-click');
+        console.log(customElement.setAttribute('refresh', true));
+    });
+
+    const btnMsg = document.getElementById('setMensaje');
+    const txtMsg = document.getElementById('mensaje');
+    btnMsg.addEventListener('click', (event) => {
+        console.log('setMensaje-click');
+        console.log(customElement.setAttribute('message', txtMsg.value));
+    });
+</script>
 
 </html>
