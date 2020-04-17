@@ -13,11 +13,10 @@ import { DogOfTheDayComponent } from './dog-of-the-day/dog-of-the-day.component'
 })
 export class AppModule implements DoBootstrap {
   constructor( private injector: Injector ) {
-    // const imagenEspacio = createCustomElement(DogOfTheDayComponent, { injector: this.injector });
-    // customElements.define('ng-chile-dotd', imagenEspacio);
   }
 
   ngDoBootstrap(appRef: ApplicationRef) {
-    appRef.bootstrap(DogOfTheDayComponent);
+    const imagenEspacio = createCustomElement(DogOfTheDayComponent, { injector: this.injector });
+    customElements.define('ng-chile-dotd', imagenEspacio);
   }
 }
