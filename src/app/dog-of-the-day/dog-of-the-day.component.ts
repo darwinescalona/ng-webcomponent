@@ -2,7 +2,6 @@ import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter, Chan
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
-import { Subject } from 'rxjs';
 
 @Component({
   selector: 'ng-chile-dog',
@@ -53,8 +52,7 @@ export class DogOfTheDayComponent implements OnInit {
   }
 
   constructor(
-    public http: HttpClient, private ref: ChangeDetectorRef
-  ) { }
+    public http: HttpClient  ) { }
 
   ngOnInit() {
     this.refresh$
@@ -62,7 +60,7 @@ export class DogOfTheDayComponent implements OnInit {
               console.log('refresh', x);
               this.loadImage();
             });
-    this.loadImage();
+    // this.loadImage();
   }
 
   loadImage() {
