@@ -4,12 +4,12 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
 
 ### Referrer
-https://medium.com/angular-chile/web-components-con-angular-elements-9bc6efd1265f
-https://coryrylan.com/blog/using-web-components-in-angular
-https://academia-binaria.com/elementos-Angular-para-los-Web-Components/
-https://www.codementor.io/blog/angular-web-components-8e4n0r0zw7
-https://github.com/rudolfolah/angular-web-component/blob/master/example/index.html
-https://blog.ng-classroom.com/blog/angular/angular-elements/
+- https://medium.com/angular-chile/web-components-con-angular-elements-9bc6efd1265f
+- https://corzrylan.com/blog/using-web-components-in-angular
+- https://academia-binaria.com/elementos-Angular-para-los-Web-Components/
+- https://www.codementor.io/blog/angular-web-components-8e4n0r0zw7
+- https://github.com/rudolfolah/angular-web-component/blob/master/example/index.html
+- https://blog.ng-classroom.com/blog/angular/angular-elements/
 
 
 ## Create web components
