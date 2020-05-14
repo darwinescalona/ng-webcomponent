@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <ng-chile-dotd message="El perro del día"></ng-chile-dotd>
+    <!-- <ng-chile-dotd message="El perro del día"></ng-chile-dotd> 
     <br>
     <hr>
     <br>
@@ -24,29 +24,31 @@
     <hr>
     <hr>
 
-    <ng-chile-potd></ng-chile-potd>
-
+    <ng-chile-potd></ng-chile-potd> -->
+    <ng-chile-latam-cs-plugin></ng-chile-latam-cs-plugin>
 </body>
 <script>
-    const customElement = document.querySelector('ng-chile-dotd');
-    customElement.addEventListener('imagenEvent', (event) => {
-        console.log('imagenEvent', event);
-    });
+    /*
+            const customElement = document.querySelector('ng-chile-dotd');
+            customElement.addEventListener('imagenEvent', (event) => {
+                console.log('imagenEvent', event);
+            });
 
 
 
-    const btnRefresh = document.getElementById('refresh');
-    btnRefresh.addEventListener('click', (event) => {
-        console.log('btnRefresh-click');
-        console.log(customElement.setAttribute('refresh', true));
-    });
+            const btnRefresh = document.getElementById('refresh');
+            btnRefresh.addEventListener('click', (event) => {
+                console.log('btnRefresh-click');
+                console.log(customElement.setAttribute('refresh', true));
+            });
 
-    const btnMsg = document.getElementById('setMensaje');
-    const txtMsg = document.getElementById('mensaje');
-    btnMsg.addEventListener('click', (event) => {
-        console.log('setMensaje-click');
-        console.log(customElement.setAttribute('message', txtMsg.value));
-    });
+            const btnMsg = document.getElementById('setMensaje');
+            const txtMsg = document.getElementById('mensaje');
+            btnMsg.addEventListener('click', (event) => {
+                console.log('setMensaje-click');
+                console.log(customElement.setAttribute('message', txtMsg.value));
+            });
+            */
 </script>
 
 </html>

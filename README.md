@@ -44,3 +44,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 </html>
 ```
 
+git tag -a -m 0.1 "Multi component one load"
+
+
+

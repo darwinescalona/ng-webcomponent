@@ -23,7 +23,7 @@ import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
       border: 1px solid #CECECE;
       padding: 20px;
       text-align: center;
-      background: #F2F2F2;
+      background: #888111;
     }
     .component_container img {
       width: 100%;
